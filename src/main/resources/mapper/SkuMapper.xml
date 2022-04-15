@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mom.shop.mbg.mapper.SkuMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.mom.shop.mbg.entity.Sku">
+        <id column="id" property="id" />
+        <result column="product_id" property="productId" />
+        <result column="price" property="price" />
+        <result column="promotion_price" property="promotionPrice" />
+        <result column="staus" property="staus" />
+        <result column="sales" property="sales" />
+        <result column="stock" property="stock" />
+        <result column="sp_data" property="spData" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, product_id, price, promotion_price, staus, sales, stock, sp_data
+    </sql>
+
+</mapper>

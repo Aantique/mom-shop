@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mom.shop.mbg.mapper.ProductMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.mom.shop.mbg.entity.Product">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="brand_id" property="brandId" />
+        <result column="category_id" property="categoryId" />
+        <result column="price" property="price" />
+        <result column="promotion_price" property="promotionPrice" />
+        <result column="key_words" property="keyWords" />
+        <result column="sales" property="sales" />
+        <result column="brand_name" property="brandName" />
+        <result column="status" property="status" />
+        <result column="category_name" property="categoryName" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, `name`, brand_id, category_id, price, promotion_price, key_words, sales, brand_name, `status`, category_name, create_time, update_time
+    </sql>
+
+</mapper>
